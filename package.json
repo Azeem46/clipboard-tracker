@@ -1,0 +1,16 @@
+{
+    "name": "clipboard-manager",
+    "version": "1.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "highlight.js": "^11.7.0"
+    },
+    "devDependencies": {
+      "vite": "^5.0.0"
+    }
+  }
+  

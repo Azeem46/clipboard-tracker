@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Clipboard Manager</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+  />
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Super Clipboard Manager</h1>
+    
+    <div class="shortcuts-info">
+      <span>⌨️ Shortcuts: Ctrl+Shift+V (Paste), Ctrl+Shift+C (Copy), Ctrl+Shift+X (Clear)</span>
+    </div>
+    
+    <div class="controls">
+      <button id="readClipboard" title="Paste from clipboard (Ctrl+Shift+V)">📥 Paste</button>
+      <button id="clearStorage" title="Clear all (Ctrl+Shift+X)">🗑 Clear</button>
+      <button id="exportTxt">⬇ Export .txt</button>
+      <button id="exportMd">⬇ Export .md</button>
+      <button id="autoCopyToggle" class="toggle-btn">🧠 Auto-copy: OFF</button>
+      <button id="pinModeToggle" class="toggle-btn">📌 Pin Mode: OFF</button>
+    </div>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="🔍 Search snippets..." />
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="code">💻 Code</option>
+        <option value="text">📝 Text</option>
+        <option value="url">🔗 URL</option>
+        <option value="email">📧 Email</option>
+        <option value="favorite">⭐ Favorite</option>
+      </select>
+    </div>
+
+    <div class="stats">
+      <span id="totalCount">Total: 0</span>
+      <span id="favoriteCount">Favorites: 0</span>
+      <span id="pinnedCount">Pinned: 0</span>
+    </div>
+
+    <div id="snippets"></div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
