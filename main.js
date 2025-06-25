@@ -405,7 +405,7 @@ function init() {
   const savedAutoCopy = localStorage.getItem('autoCopyEnabled');
   const savedPinMode = localStorage.getItem('pinModeEnabled');
   
-  if (savedAutoCopy === 'true') {
+  if (savedAutoCopy === 'true' || savedAutoCopy === null) {
     toggleAutoCopy();
   }
   
